@@ -1,0 +1,66 @@
+
+
+
+/* TODO styles for deck builder page.*/
+#search-button, .button, #add-button {
+    background-color: rgb(241, 173, 100);
+}
+
+body {
+    /*background-color: rgb(158, 149, 144);*/
+}
+
+#search-box { 
+    background-color: rgb(78,59,52);
+}
+
+#search-bar {
+    background-color: #fffdd0;
+}
+
+#card-cost {
+    color: #fffdd0;
+}
+
+/* NAV BAR */
+.navbar {
+    background-color: rgb(97, 73, 65);
+}
+
+.navbar-start {
+    padding-left: 7px;
+}
+
+.navbar-end {
+    padding-right: 7px;
+}
+
+.label, .title {
+    color: #fffdd0;
+}
+.navbar-item {
+    color: #fffdd0;
+}
+.label {
+    color: #fffdd0;
+}
+
+.column {
+    background-color: rgb(78,59,52);
+    border-radius: 20px;
+    border: 15px solid rgb(97, 73, 65);
+}
+
+.cardBox {
+    background-color: #fffdd0;
+}
+
+.ui-menu {
+    color: rgb(78,59,52);
+    background-color: rgb(165, 155, 150);
+    font-size: large;
+}
+
+html {
+    background-image: url(../images/mtgbackground.jpg);
+}

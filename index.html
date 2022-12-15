@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- set metadata and link framework, jquery and styles -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <title>Magic The Gathering Deck Builder</title>
+</head> 
+
+<body>
+    <!--Navbar header -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://magic.wizards.com/en" target="_blank">
+                <img src="./assets/images/mtglogo.jpg" width="112" height="28">
+              </a>
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="https://magic.wizards.com/en/how-to-play" target="_blank">
+                  How to Play
+                </a>
+          
+                <a class="navbar-item" href="https://magic.wizards.com/en/formats/commander" target="_blank">
+                  Commander Rulebook
+                </a>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Contributors
+                    </a>
+                    <!--Dropdown menu for attribution-->
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item" href="https://github.com/Jacksonwolfd20" target="_blank">
+                        Junior Cabriales
+                      </a>
+                      <a class="navbar-item" href="https://github.com/zdedm" target="_blank">
+                        Zachary Edmonson
+                      </a>
+                      <a class="navbar-item" href="https://github.com/mcfoote" target="_blank">
+                        Mitchell Foote
+                      </a>
+                      <a class="navbar-item" href="https://github.com/MWells012" target="_blank">
+                        Michaela Wells
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </nav>
+
+          <div id="date"></div>
+          
+    </header>
+    <!--Form with searchbar -->
+    <form class="box is-three-fifths column is-vcentered is-offset-one-fifth" id="searchBox">
+        <div class="container">
+            <div class="field">
+
+                <p class="control has-icons-left">
+                    <input class="input" type="text" placeholder="Enter Desired Card" id="searchBar">
+                    <span class="icon is-left">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </p>
+      
+            </div>
+            <!--Selector for currency -->
+            <div class="control">
+
+                <label class="radio"><input type="radio" name="foobar" id="usdCheck" checked>$USD</label>
+                  
+                <label class="radio"><input type="radio" name="foobar" id="eurCheck">€EUR</label>
+
+                  
+            </div>
+
+       
+            <button id="searchButton" class="button is-medium" >Search!</button>
+    
+        </div>
+    </form>
+    <!--landing page body content -->
+    <div class="descriptionBox">
+            <div class="media-content">
+                <p>
+                  <strong id="pHeader">Welcome Planeswalker to Magic The Gathering Deck Builder!</strong>
+                  <br>
+                  With our site you can search cards and place them in a deck, and when you think you have the perfect prospective deck built you can price out what the current going market price for that deck would be in $USD or €EUR.
+                </p>
+              <img class="image" src="./assets/images/mtgdecks.jpg" alt="MTG deck boxes">
+              </figure>
+              </div>
+            </div>
+       
+    </div>
+    
+    <!-- modal -->
+    <div class="modal" id="modalBox">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+            <p>You must enter a cards name</p>
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="modalClose"></button>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+    
+  </div>
+
+</body> 
+
+</html>

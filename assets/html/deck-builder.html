@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MTG Deck Builder</title>
+
+    <!-- importing Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- linking deck-builder.js -->
+    <link rel="stylesheet" href="../css/deck-builder.css">
+    <!-- importing jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <!-- <h1> AND <div class="navbar-menu"> SHOULD BE DISPLAYED INLINE; <h1> SHOULD ALIGN CENTER; <div class="navbar-menu"> SHOULD ALIGN RIGHT -->
+        <!-- links back to index.html -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://magic.wizards.com/en">
+                <img src="../images/mtglogo.jpg" width="112" height="28">
+              </a>
+              <a role="button" 
+              aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="https://magic.wizards.com/en/how-to-play" target="_blank">
+                  How to Play
+                </a>
+          
+                <a class="navbar-item" href="https://media.wizards.com/2022/downloads/MagicCompRules%2020220708.pdf" target="_blank">
+                  Rulebook PDF
+                </a>
+              </div>
+            </div>
+        </nav>
+        
+
+        <nav class="navbar" role="navigation">
+            <div class="navbar-start">
+                <a class="button" href="../../index.html">Home</a>
+            </div>
+            <!-- links to Pricing.html -->
+            <div class="navbar-end">
+                <a class="button" href="Pricing.html">Pricing</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Bar Structure -->
+    
+    <div class="columns">
+        <!-- Card Preview Structure -->
+        <div class="column is-4 is-offset-2">
+            <!-- placeholder image; could be cleaner, sizing needs adjusted -->
+            <figure class="image" id="card-display">
+                <img class="" id="card-preview" src="../images/mtgcardback.jpg">
+            </figure>
+
+            <!-- buttons for USD or EUR pricing -->
+            <div class="buttons has-addons">
+                <button class="button is-dark is-selected" id="usd-button">$USD</button>
+                <button class="button is-light" id="eur-button">€EUR</button>
+            </div>
+            <!-- buttons for standard or foil printing -->
+            <div class="buttons has-addons">
+                <button class="button is-dark is-selected" id="standard-button">Standard</button>
+                <button class="button is-light" id="foil-button">Foil</button>
+            </div>
+
+            <!-- displays card price -->
+            <p class="content" id="card-cost">0.00</p>
+        </div>
+
+        <!-- Deck List structure -->
+        <div class="column is-3 is-offset-2">
+            <h2 class="title">Deck List</h2>
+            <ul id="deck-list">
+            <ul>
+            
+        </div>
+        
+    </div>
+
+    <footer>
+      <br>
+      <br>
+    </footer>
+
+    <!-- deck-builder.js is empty for now -->
+	<script src="../js/deck-builder.js"></script>
+  </body>
+</html>

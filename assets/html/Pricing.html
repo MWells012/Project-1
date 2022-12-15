@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Importing my CSS and Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/Pricingstyle.css" />
+    <title>Magic The Gathering Deck</title>
+</head>
+
+<body>
+  <header>
+    <!-- <h1> AND <div class="navbar-menu"> SHOULD BE DISPLAYED INLINE; <h1> SHOULD ALIGN CENTER; <div class="navbar-menu"> SHOULD ALIGN RIGHT -->
+    <!-- links back to index.html -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!--Add Image for Navbar-->
+          
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a class="navbar-item" href="https://magic.wizards.com/en">
+              <img id="Img-Background" src="../images/mtglogo.jpg" width="112" height="28">
+            </a>
+            <a role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      <!--Navbar Start and DeckList-->
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="../../index.html">
+              Main Page
+              <a class="navbar-item" href="https://magic.wizards.com/en/how-to-play" target="_blank">
+                How to Play
+              </a>
+        
+              <a class="navbar-item" href="https://magic.wizards.com/en/formats/commander" target="_blank">
+                Commander Rulebook
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar" role="navigation">
+        <div class="navbar-start">
+            <a class="button" href="../../index.html">Home</a>
+        </div>
+        <!-- links to Pricing.html -->
+        <div class="navbar-end">
+
+            <a class="button" href="deck-builder.html">Deck Builder</a>
+
+        </div>
+        
+    </div>
+    </nav>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+</header>
+      <!--Bar for the left of the screen-->
+      <form class="box is-2 column height-100 position-fixed is-mobile">
+        <div class="field bulma-center-mixin">
+          <label class="label">Card Of Your Choice</label>
+          <div class="control">
+            <!--This will be the search feature-->
+            <input class="input" id="search-input" type="card" placeholder="e.g. Ancient Gold Dragon">
+          </div>
+        </div>
+
+        <br />
+
+        <div class="control">
+            <label class="radio">
+              <input type="radio" name="foobar" id="UsdCheck" checked>
+              $USD
+            </label>
+            <label class="radio">
+              <input type="radio" name="foobar" id="EuroCheck">
+              €EUR
+            </label>
+          </div>
+
+          <br />
+      
+        <button id="searchbutton" class="button  custom-color" >Search</button>
+
+      </form>
+      
+
+      
+
+<!--Will be where cards ar displayed-->
+<div class="box column  is-offset-one-fifth is-three-quarters ">
+  <div id="modalAlert" class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content custom-modal py-5 px-5">
+      <p id="alertMessege"></p>
+    </div>
+    <button id="closeButton" class="modal-close is-large" aria-label="close"></button>
+  </div>
+  
+    <h2 >Showing results for: <span id="result-text"></span></h2>
+      
+    <div id="result-content" class="column"></div>
+    <progress id="progress" class="progress is-warning" value="0" max="100"></progress>
+</div>
+    
+  
+
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="../js/Pricingscript.js"></script>
+
+</body>
